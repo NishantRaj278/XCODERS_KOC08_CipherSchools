@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:ital@1&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:ital@1&family=PT+Serif&family=Zen+Dots&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#container
+{
+    height: 125vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #e9e9eb;
+}
+/* logo */
+#container #logo
+{
+    position: fixed;
+    left: 8%;
+    top: 30px;
+    font-size: 30px;
+    z-index: 997;
+    font-weight: bold;
+    color: #165397;
+    font-family: 'Zen Dots', cursive;
+}
+/* navbar */
+#navbar
+{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fdfefe;
+    display: grid;
+    place-items: center;
+
+}
+#navbar ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li
+{
+    font-size: 20px;
+    margin: 0 45px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: #000;
+}
+#navbar ul li a:hover
+{
+    color: #165397;
+}
+
+#navbar ul #login
+{
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    display: grid;
+    place-items: center;
+    background: #165397;
+    border-radius: 10px 20px;
+}
+#navbar ul #login a
+{
+    color: #e9e9eb;
+}
+#navbar ul #login:hover
+{
+    background: #000;
+}
+
+#image
+{
+    position: absolute;
+    top: calc(50% - 300px);
+    right: 5%;
+    z-index: 999;
+}
+#image img
+{
+    height: 600px;
+    filter: drop-shadow(-140px -140px 5px rgba(0,0,0,0.5));
+    transition: 0.5s;
+}
+#image img:hover
+{
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+
+}
+
+#content
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 996;
+}
+#content h2
+{
+    font-size: 300px;
+    font-family: 'Zen Dots', cursive;
+    color: #165397;
+}
+#content:hover h2
+{
+    color: #000;
+    transition: 0.5s;
+}
+#content h4
+{
+    font-size: 70px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+}
+#content h5
+{
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+    color: #000;
+}
+#content h6
+{
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+    color: #000;
+}
+#content:hover h4
+{
+    color: #165397;
+    transition: 0.5s;
+}
+
+#icons
+{
+    height: 500px;
+    width: 65px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 250px);
+    background: #1c5da4;
+    border-radius: 0 60px 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 998;
+}
+#icons:hover
+{
+    background: #000;
+}
+#icons a
+{
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    font-size: 23px;
+    color: #e9e9eb;
+    display: grid;
+    place-items: center;
+    margin: 30px 0
+}
+#icons a:hover
+{
+    color: #1b66bb;
+}
+
+#line1,#line2
+{
+    height: 150px;
+    width: 60px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    transform: skewX(-45deg);
+}
+#line2
+{
+    height: 60px;
+    left: 26%;
+}
